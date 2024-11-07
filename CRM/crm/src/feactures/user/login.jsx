@@ -10,7 +10,9 @@ function Login() {
             username:document.getElementById('a1').value,
             password:document.getElementById("a1").value
         }
-        loginfn(x).then((res)=>console.log(res))
+        loginfn(x).then((res)=>{
+            window.localStorage.setItem('token',res.data.token)
+        })
         } 
     return (
         <div>
