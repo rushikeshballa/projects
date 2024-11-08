@@ -12,7 +12,6 @@ import { store } from './app/store';
 import Signup from './feactures/user/signup';
 import Login from './feactures/user/login';
 import Dasbord from './feactures/user/dasbord';
-import Leads from './feactures/user/leades';
 import Addlead from './feactures/user/addlead';
 const router = createBrowserRouter([
   {
