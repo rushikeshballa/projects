@@ -23,9 +23,17 @@ export const crmApi = createApi({
            body:User,
         })
       }),
+      leades: builder.query({
+        query: () => ({
+          url:``,
+          headers:{
+            "authorization":window.localStorage.getItem('token')
+          }
+        })
+      }),
   }),
 })
 
 
 
-export const { useSignupMutation, useLoginMutation  } =crmApi
+export const { useSignupMutation, useLoginMutation ,useLeadesQuery } =crmApi

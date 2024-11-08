@@ -11,12 +11,10 @@ function Login() {
             password:document.getElementById("a1").value
         }
         loginfn(x).then((res)=>{
-            window.localStorage.setItem('token',res.data.token).then((()=>{
+            window.localStorage.setItem('token',res.data.token)
                 if (window.localStorage.getItem('token')) {
-                    navgate('dasbord')
+                    navgate('/dasbord')
                 }
-              
-            }))
         })
         } 
     return (
@@ -28,7 +26,9 @@ function Login() {
         <br />
         <button onClick={(()=>{login()})}>login</button>
 
-        </div>)
+        </div>
+
+      )
 }
 
 export default Login;

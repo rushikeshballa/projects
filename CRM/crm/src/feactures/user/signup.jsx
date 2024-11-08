@@ -9,7 +9,7 @@ const Signup = (()=>{
             username:document.getElementById('a1').value,
             password:document.getElementById("a1").value
         }
-        signupfn(x).then((res)=>console.log(res))
+        signupfn(x)
            
         } 
     return (

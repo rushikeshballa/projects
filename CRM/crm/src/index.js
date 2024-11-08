@@ -11,7 +11,9 @@ import { Provider } from 'react-redux';
 import { store } from './app/store';
 import Signup from './feactures/user/signup';
 import Login from './feactures/user/login';
-
+import Dasbord from './feactures/user/dasbord';
+import Leads from './feactures/user/leades';
+import Addlead from './feactures/user/addlead';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +26,17 @@ const router = createBrowserRouter([
       {
         path:"/login",
         element:<Login></Login>
+      },
+      {
+            path:"/addlead",
+            element:<Addlead></Addlead>
+      },
+      {
+        path:"/dasbord",
+        element:<Dasbord></Dasbord>,
+        children:[
+          
+        ]
       }
     ]
   },
