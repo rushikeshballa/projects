@@ -30,7 +30,7 @@ console.log(data);
                                     <td>{lead.mobile}</td>
                                     <td>{lead.email}</td>
                                     <td>{lead.intrestedCourse}</td>
-                                    <td>{(lead.referredBy)}</td>
+                                    <td  className="btn btn-danger" >delete</td>
                                 </tr>
                             })
                         }
